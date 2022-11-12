@@ -115,6 +115,24 @@ class Fox extends Mammals {
 
 
 
+    public Fox() {
+        new Counter().setCount();
+        this.furColor = randomColor();
+    }
+
+
+    private static int count = 0;
+
+    private static class Counter {
+        private void setCount() {
+            count = count + 1;
+        }
+    }
+
+    public static int getCount() {
+        return count;
+    }
+
     class Habitat {
         public void foxesLive() {
             System.out.println("Foxes usually live in forested areas.");
@@ -122,6 +140,26 @@ class Fox extends Mammals {
     }
 
 
+    static enum FOX_COLORS {BROWN, RED, WHITE};
 
+    FOX_COLORS furColor;
+
+    public FOX_COLORS randomColor() {
+        FOX_COLORS arr[] = FOX_COLORS.values();
+        int index = (int) (Math.random() * arr.length);
+        return arr[index];
+    }
+
+    public String getColorOfFur() {
+        return furColor.name();
+    }
+
+
+    class FurColor {
+        void foxFurColor() {
+            System.out.println("Fox has " + getColorOfFur() + " fur");
+        }
+
+    }
 
 }

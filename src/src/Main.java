@@ -12,6 +12,22 @@ public class Main {
         habitat.foxesLive();
         System.out.println("");
 
+        Fox.FurColor fur = fox.new FurColor();
+        fur.foxFurColor();
+        System.out.println("");
+
+        System.out.println("Array random color foxes:");
+        Fox arr[] = new Fox[3];
+        for (int i=0; i<arr.length; i++) {
+            Fox fox_tmp = new Fox();
+            System.out.println("Fox " + (i + 1) + " has " + fox_tmp.getColorOfFur() + " fur");
+        }
+
+        System.out.println("\nTotal created foxes: " + Fox.getCount());
+
+
+        System.out.println("");
+
         Fish fish = new Fish();
         System.out.println("About fish:");
         fish.info();
