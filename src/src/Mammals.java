@@ -114,4 +114,14 @@ class Fox extends Mammals {
     }
 
 
+
+    class Habitat {
+        public void foxesLive() {
+            System.out.println("Foxes usually live in forested areas.");
+        }
+    }
+
+
+
+
 }

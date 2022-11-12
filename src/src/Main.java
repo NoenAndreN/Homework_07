@@ -8,6 +8,10 @@ public class Main {
 
         System.out.println("");
 
+        Fox.Habitat habitat = fox.new Habitat();
+        habitat.foxesLive();
+        System.out.println("");
+
         Fish fish = new Fish();
         System.out.println("About fish:");
         fish.info();
